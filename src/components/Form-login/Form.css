@@ -1,0 +1,13 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#form-main-container {
+  place-items: center center;
+}
+
+#login-form {
+  max-width: 330px;
+}
+
+#form-submit {
+  display: grid;
+}
