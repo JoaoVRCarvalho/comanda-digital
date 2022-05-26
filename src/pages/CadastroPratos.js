@@ -1,10 +1,10 @@
 import React from "react";
 // import Header from "../components/Navbar/Navbar.jsx";
 
-const Homepage = () => (
+const CadastroPrato = () => (
     <>
-        <h1>Home</h1>
+        <h1>Cadastro Prato</h1>
     </>
 )
 
-export default Homepage;
+export default CadastroPrato;
