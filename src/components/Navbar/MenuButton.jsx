@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom' 
 import { MenuRounded } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
 
-const MenuButton = () => (
+const MenuButton = (props) => (
     <Link to="#" className="menu-bar">
-        <MenuRounded/>
+        <IconButton onClick={props.showSidebar}>
+            <MenuRounded/>
+        </IconButton>
     </Link>
 )
 
