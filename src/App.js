@@ -5,7 +5,6 @@ import Homepage from './pages/Homepage'
 import CadatroProduto from './pages/CadastroProduto'
 import CadatroFuncionario from './pages/CadastroFuncionario'
 import CadastroPrato from "./pages/CadastroPratos";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -13,10 +12,10 @@ export default function App() {
         <Router>
             <Header />
             <Routes>
-                <Route exact path="/" component={Homepage}/>
-                <Route path="/produto" component={CadatroProduto}/>
-                <Route path="/funcionario" component={CadatroFuncionario}/>
-                <Route path="/prato" component={CadastroPrato}/>
+                <Route exact path="/" element={<Homepage/>}/>
+                <Route path="/produto" element={<CadatroProduto/>}/>
+                <Route path="/funcionario" element={<CadatroFuncionario/>}/>
+                <Route path="/prato" element={<CadastroPrato/>}/>
             </Routes>
         </Router>
     )
