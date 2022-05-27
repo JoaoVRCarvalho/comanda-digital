@@ -8,7 +8,6 @@ const Header = () => {
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
-    // quand a função showsidebar for chamda, o menubutton vai receber o resultado e mostrar a sidebar atraves do componente sidebar.
     return (
         <header className="app-header">
             <div className="header-wrapper">
