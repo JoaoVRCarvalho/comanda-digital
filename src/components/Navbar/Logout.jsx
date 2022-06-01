@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 
 const LogoutButton = () => {
     return (
-        <IconButton>
-            <Logout/>
-        </IconButton>
+        <Link to="Login">
+            <IconButton>
+                <Logout/>
+            </IconButton>
+        </Link>
     )
 }
 
