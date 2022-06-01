@@ -36,7 +36,7 @@ span {
 .side-text {
     padding: 8px 0px 8px 16px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     list-style: none;
     align-items: center;
     height: 60px;
