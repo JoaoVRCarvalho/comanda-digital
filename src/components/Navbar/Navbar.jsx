@@ -10,7 +10,7 @@ const Header = () => {
     const GetLocation = () => (useLocation().pathname);
 
     const showSidebar = () => setSidebar(!sidebar);
-    if (GetLocation() != "/Login") {
+    if (GetLocation() !== "/Login") {
         return (
             <header className="app-header">
                 <div className="header-wrapper">
