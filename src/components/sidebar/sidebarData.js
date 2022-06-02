@@ -1,7 +1,6 @@
 import React from "react";
-import { HomeRounded, AssignmentIndRounded, AssignmentRounded } from '@mui/icons-material';
-import { ArrowDropUpRounded } from '@mui/icons-material';
-import { ArrowDropDownRounded } from '@mui/icons-material';
+import { HomeRounded, ArticleRounded, CheckCircleRounded } from '@mui/icons-material';
+
 
 export const SidebarData = [
     {
@@ -11,28 +10,15 @@ export const SidebarData = [
         cName: "side-text"
     },
     {
-        title: "Cadastros", //Cadastro de produtos
+        title: "Cadastros", 
         path: "/cadastro",
-        icon: <AssignmentRounded/>,
-        iconClosed: <ArrowDropUpRounded/>,
-        iconOpened: <ArrowDropDownRounded/>,
+        icon: <ArticleRounded/>,
         cName: "side-text",
-        subNav: [
-            {
-                title: "Produtos",
-                path: "cadastro/produto",
-                icon: <AssignmentRounded/>,
-            },
-            {
-                title: "Funcionarios",
-                path: "cadastro/funcionario",
-                icon: <AssignmentIndRounded/>,
-            },
-            {
-                title: "Pratos",
-                path: "cadastro/prato",
-                icon: <AssignmentRounded/>,
-            },
-        ]
+    },
+    {
+        title: "Consulta", 
+        path: "",
+        icon: <CheckCircleRounded/>,
+        cName: "side-text",
     },
 ]
