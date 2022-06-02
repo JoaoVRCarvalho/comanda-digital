@@ -1,10 +1,8 @@
 import React from "react";
-// import Header from "../components/Navbar/Navbar.jsx";
+import TabsCadastro from "../components/TabsCadastro/TabsCadastro";
 
-const CadatroProduto = () => (
-    <>
-        <h1>Cadatro Produto</h1>
-    </>
+const Cadatros = () => (
+    <TabsCadastro/>
 )
 
-export default CadatroProduto;
+export default Cadatros;
