@@ -7,10 +7,12 @@ export default function TabsCadastro() { //iterar sob o item antes de colar aqui
     return (
         <Tabs>
             {TabsData.map((data, index) => (
-                <Tab className="mb-3"
+                <Tab 
+                    className="mb-3"
                     key={index} 
                     eventKey={index} 
                     title={data.title}>
+                        {data.tabInputComponent}
                 </Tab>
             ))}
         </Tabs>
