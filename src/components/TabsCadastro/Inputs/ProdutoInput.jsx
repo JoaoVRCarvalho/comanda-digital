@@ -1,23 +1,12 @@
 import React from "react";
 import { Container, Form, Row, Col, InputGroup, Button } from "react-bootstrap";
 import './ProdutoInput.css'
-import { from } from "array-flatten";
 
 export default function ProdutoInput() {
     return (
         <Container className="inputAreaWrapper">
             <Form className="inputAreaForm">
                 <Row className="linhaForm" id="primeiraLinhaInput">
-                    <Form.Group as={Col} controlId="descProduto">
-                        <Form.Label>Descrição</Form.Label>
-                        <Form.Control 
-                            as="textarea" 
-                            placeholder="Descrição do item"
-                            className="descTextaArea"
-                        />
-                    </Form.Group>
-                </Row>
-                <Row className="linhaForm" id="segundaLinhaInput">
                     <Form.Group as={Col} controlId="dataEntrada">
                         <Form.Label>Data de entrada</Form.Label>
                         <br></br>
@@ -37,14 +26,24 @@ export default function ProdutoInput() {
                         />
                     </Form.Group>
                 </Row>
+                <Row className="linhaForm" id="segundaLinhaInput">
+                    <Form.Group as={Col} controlId="descProduto">
+                        <Form.Label>Descrição</Form.Label>
+                        <Form.Control 
+                            as="textarea" 
+                            placeholder="Descrição do item"
+                            className="descTextaArea"
+                        />
+                    </Form.Group>
+                </Row>
                 <Row className="linhaForm" >
-                    <InputGroup>
+                    <InputGroup size="sm" className="inputGp">
                         <InputGroup.Text>Quantidade</InputGroup.Text>
                         <Form.Control />
                     </InputGroup>
                 </Row>
                 <Row className="linhaForm">
-                    <InputGroup>
+                    <InputGroup size="sm" className="inputGp">
                         <InputGroup.Text>Valor da compra</InputGroup.Text>
                         <InputGroup.Text>R$</InputGroup.Text>
                         <Form.Control />
