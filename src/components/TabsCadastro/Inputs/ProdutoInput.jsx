@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Form, Row, Col } from "react-bootstrap";
-import DateInput from "../../_General/DateInput";
+import { Container, Form, Row, Col, InputGroup, Button } from "react-bootstrap";
 import './ProdutoInput.css'
+import { from } from "array-flatten";
 
 export default function ProdutoInput() {
     return (
         <Container className="inputAreaWrapper">
-            <Form>
-                <Row id="primeiraLinhaInput">
+            <Form className="inputAreaForm">
+                <Row className="linhaForm" id="primeiraLinhaInput">
                     <Form.Group as={Col} controlId="descProduto">
                         <Form.Label>Descrição</Form.Label>
                         <Form.Control 
@@ -17,14 +17,47 @@ export default function ProdutoInput() {
                         />
                     </Form.Group>
                 </Row>
-                <Row id="segundaLinhaInput">
+                <Row className="linhaForm" id="segundaLinhaInput">
                     <Form.Group as={Col} controlId="dataEntrada">
                         <Form.Label>Data de entrada</Form.Label>
-                        <DateInput placeholder="Data de entrada"  />
+                        <br></br>
+                        <input
+                            max="1979-12-31"
+                            type="date"
+                            placeholder="dd/mm/AAAA"
+                        />
                     </Form.Group>
                     <Form.Group as={Col} controlId="validadeProduto">
                         <Form.Label>Validade</Form.Label>
-                        <DateInput placeholder="Validade"  />
+                        <br></br>
+                        <input
+                            max="1979-12-31"
+                            type="date"
+                            placeholder="dd/mm/AAAA"
+                        />
+                    </Form.Group>
+                </Row>
+                <Row className="linhaForm" >
+                    <InputGroup>
+                        <InputGroup.Text>Quantidade</InputGroup.Text>
+                        <Form.Control />
+                    </InputGroup>
+                </Row>
+                <Row className="linhaForm">
+                    <InputGroup>
+                        <InputGroup.Text>Valor da compra</InputGroup.Text>
+                        <InputGroup.Text>R$</InputGroup.Text>
+                        <Form.Control />
+                    </InputGroup>
+                </Row>
+                <Row className="linhaForm">
+                    <Form.Group controlId="statusProduto">
+                        <Form.Check type="checkbox" label="Ativo/Inativo" />
+                    </Form.Group>
+                </Row>
+                <Row className="linhaForm">
+                    <Form.Group controlId="btnSubmit">
+                        <Button as="input" type="submit" value="Submit" />
                     </Form.Group>
                 </Row>
             </Form>

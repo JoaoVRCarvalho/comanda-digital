@@ -1,8 +1,15 @@
 .InputAreaWrapper {
-    place-items: center center;
+    display: flex;
+    align-items: center;
 }
-
+.linhaForm {
+    margin-bottom: 10px;
+}
 .descTextaArea {
     height: 100px;
     max-height: 100px;
+}
+
+.form-check {
+    justify-content: flex-end
 }
