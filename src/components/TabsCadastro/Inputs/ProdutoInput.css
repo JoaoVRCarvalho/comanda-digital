@@ -1,6 +1,13 @@
+.tab-content {
+    display: flex;
+    justify-content: center;
+    place-items: center center;
+}
+
 .InputAreaWrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .linhaForm {
     margin-bottom: 10px;
@@ -11,5 +18,5 @@
 }
 
 .form-check {
-    justify-content: flex-end
+    display: flex;
 }
