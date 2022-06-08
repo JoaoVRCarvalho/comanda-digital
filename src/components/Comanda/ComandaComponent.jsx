@@ -1,7 +1,8 @@
 import { React, useState } from 'react';
-import { Container, Button } from 'react-bootstrap'
 import FazerPedidoBtn from './FazerPedidoButton.jsx'
+import InputPedido from './InputPedido.jsx';
 import './Comanda.css'
+import { Container } from 'react-bootstrap';
 
 export default function ComandaComponent() {
     const [fazerPedido, setFazerPedido] = useState(false);
@@ -9,6 +10,11 @@ export default function ComandaComponent() {
     const showFazerPedido = () => setFazerPedido(!fazerPedido);
 
     return (
-        <FazerPedidoBtn fazerPedido={fazerPedido} showFazerPedido={showFazerPedido} />
+        <Container>
+            <FazerPedidoBtn fazerPedido={fazerPedido} showFazerPedido={showFazerPedido}/>
+            {fazerPedido &&
+                <InputPedido />
+            }    
+        </Container>
     )
 }

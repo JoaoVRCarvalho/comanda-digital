@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Row, Col, InputGroup, Button } from "react-bootstrap";
+import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import './ProdutoInput.css'
 
 export default function ProdutoInput() {

@@ -4,15 +4,24 @@
 }
 
 #btnFazerPedido {
-    /* margin-top: 5vh; */
-    color: white;
-    background-color: darkslateblue;
     height:100px;
     width:100px;
 }
 
+.comandaBtn {
+    /* margin-top: 5vh; */
+    color: white;
+    background-color: darkslateblue;
+}
+
 #containerDiv {
     margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedidoInputDiv {
     display: flex;
     align-items: center;
     justify-content: center;
