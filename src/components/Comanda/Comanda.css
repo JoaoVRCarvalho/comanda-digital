@@ -1,0 +1,19 @@
+.btn-container {
+    visibility: hidden;
+    display: none;
+}
+
+#btnFazerPedido {
+    /* margin-top: 5vh; */
+    color: white;
+    background-color: darkslateblue;
+    height:100px;
+    width:100px;
+}
+
+#containerDiv {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
