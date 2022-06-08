@@ -12,12 +12,12 @@ export const TabsData = [
         title: "Cadastro de Pratos",
         key: "produtos",
         cName: "tabCadastro",
-        tabInputComponent: <>oi</>,
+        tabInputComponent: <ProdutoInput/>,
     },
     {
         title: "Cadastro de funcionarios",
         key: "produtos",
         cName: "tabCadastro",
-        tabInputComponent: <>oi</>,
+        tabInputComponent: <ProdutoInput />,
     },
 ]

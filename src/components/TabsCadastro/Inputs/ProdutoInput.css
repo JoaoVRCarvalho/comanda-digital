@@ -18,5 +18,9 @@
 }
 
 .form-check {
-    display: flex;
+    display: flexbox;
+}
+
+#btnSubmit {
+    width: 100%
 }
