@@ -6,32 +6,41 @@ export const listaProdutos = [
         id: 1,
         nome: "Arroz",
         Ds_Produto: "Saco de arroz 1kg",
-        tb_pedido_id_pedido: 1
+        tb_pedido_id_pedido: 1,
+        prodImg: "./images/ArrozIMG.jpg"
     },
     {
         id: 2,
         nome: "Feijao",
         Ds_Produto: "Saco de feijao 1kg",
-        tb_pedido_id_pedido: 1
+        tb_pedido_id_pedido: 1,
+        prodImg: "./images/FeijaoIMG.jpg"
+
     },
     {
         id: 3,
         nome: "Beterraba",
         Ds_Produto: "Saco de beterraba 1kg",
-        tb_pedido_id_pedido: 1
+        tb_pedido_id_pedido: 1,
+        prodImg: "./images/BeterrabaIMG.jpg"
+
     },
-    {
-        id: 4,
-        nome: "Salada",
-        Ds_Produto: "Saco de salada 1kg",
-        tb_pedido_id_pedido: 1
-    },
-    {
-        id: 5,
-        nome: "Agua",
-        Ds_Produto: "Saco de agua 1kg",
-        tb_pedido_id_pedido: 1
-    },
+    // {
+    //     id: 4,
+    //     nome: "Salada",
+    //     Ds_Produto: "Saco de salada 1kg",
+    //     tb_pedido_id_pedido: 1,
+    //     prodImg: "./images"
+
+    // },
+    // {
+    //     id: 5,
+    //     nome: "Agua",
+    //     Ds_Produto: "Saco de agua 1kg",
+    //     tb_pedido_id_pedido: 1,
+    //     prodImg: "./images"
+
+    // },
 ]
 
 export const funcionarios = [
