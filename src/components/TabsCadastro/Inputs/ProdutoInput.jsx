@@ -18,7 +18,6 @@ export default function ProdutoInput() {
                 </Row>
                 <Row className="linhaForm" id="segundaLinhaInput">
                     <Form.Group as={Col} controlId="descProduto">
-                        <Form.Label>Descrição</Form.Label>
                         <Form.Control 
                             as="textarea" 
                             placeholder="Descrição do item"

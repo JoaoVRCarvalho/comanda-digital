@@ -34,5 +34,3 @@ export default function InputPedido() {
         </div>
     )
 }
-
-// toda vez q o botão adicionar item for clicado, uma nova row com adicionar item deve aparecer 
