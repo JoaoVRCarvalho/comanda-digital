@@ -1,4 +1,4 @@
-// fazer mock com todas as infos de protudos
+// fazer mock com todas as infos de 
 
 export const listaProdutos = [
     {
@@ -6,14 +6,14 @@ export const listaProdutos = [
         nome: "Arroz",
         Ds_Produto: "Saco de arroz 1kg",
         tb_pedido_id_pedido: 1,
-        prodImg: "./images/ArrozIMG.jpg"
+        prodImg: require("./images/ArrozIMG.jpg")
     },
     {
         id: 2,
         nome: "Feijao",
         Ds_Produto: "Saco de feijao 1kg",
         tb_pedido_id_pedido: 1,
-        prodImg: "./images/FeijaoIMG.jpg"
+        prodImg: require("./images/FeijaoIMG.jpg")
 
     },
     {
@@ -21,25 +21,23 @@ export const listaProdutos = [
         nome: "Beterraba",
         Ds_Produto: "Saco de beterraba 1kg",
         tb_pedido_id_pedido: 1,
-        prodImg: "./images/BeterrabaIMG.jpg"
+        prodImg: require("./images/BeterrabaIMG.jpg")
 
     },
-    // {
-    //     id: 4,
-    //     nome: "Salada",
-    //     Ds_Produto: "Saco de salada 1kg",
-    //     tb_pedido_id_pedido: 1,
-    //     prodImg: "./images"
-
-    // },
-    // {
-    //     id: 5,
-    //     nome: "Agua",
-    //     Ds_Produto: "Saco de agua 1kg",
-    //     tb_pedido_id_pedido: 1,
-    //     prodImg: "./images"
-
-    // },
+    {
+        id: 4,
+        nome: "Salada",
+        Ds_Produto: "Saco de salada 1kg",
+        tb_pedido_id_pedido: 1,
+        prodImg: require("./images/BeterrabaIMG.jpg")
+    },
+    {
+        id: 5,
+        nome: "Agua",
+        Ds_Produto: "Saco de agua 1kg",
+        tb_pedido_id_pedido: 1,
+        prodImg: require("./images/BeterrabaIMG.jpg")
+    },
 ]
 
 export const funcionarios = [
