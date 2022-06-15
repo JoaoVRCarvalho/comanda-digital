@@ -37,7 +37,7 @@
 /*  cards css  */
 
 .card-wrapper {
-    justify-content: space-around;
+    justify-content: flex-start;
     justify-items: center;
     align-items: center;
     margin-top: 20px;
@@ -45,9 +45,9 @@
 }
 
 .card-cardapio {
-    max-width: 250px;
+    max-width: 320px;
     max-height: 250px;
-    min-width: 200px;
+    min-width: 320px;
     min-height: 200px;
 }
 
@@ -60,13 +60,16 @@
 }
 
 .col {
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 200px;
+    max-width: 320px;
+    max-height: 250px;
+    min-width: 320px;
     min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
 .button-wrapper {
