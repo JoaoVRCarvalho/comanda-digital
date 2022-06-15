@@ -12,7 +12,6 @@ export default function CardapioCards() {
                 {listaProdutos.map((obj, idx) => (
                     <Col key={idx}>
                         <Card key={obj.id} className="card-cardapio">
-                            {/* <Card.Img src={obj.prodImg} /> */}
                                 <Card.Body>
                                     <Card.Title>{obj.nome}</Card.Title>
                                     <Card.Text id='card-text'>
