@@ -10,7 +10,7 @@ export default function ComandaComponent() {
     const showFazerPedido = () => setFazerPedido(!fazerPedido);
 
     return (
-        <Container>
+        <Container className="FazerPedido-Wrapper">
             <FazerPedidoBtn fazerPedido={fazerPedido} showFazerPedido={showFazerPedido}/>
             {fazerPedido &&
                 <InputPedido />

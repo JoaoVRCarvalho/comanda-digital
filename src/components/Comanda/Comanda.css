@@ -26,3 +26,31 @@
     align-items: center;
     justify-content: center;
 }
+
+/*  cards css  */
+
+.card-wrapper {
+    justify-items: center;
+    align-items: center;
+}
+
+.card-cardapio {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardFooter-btn {
+    color: white;
+    background-color: darkslateblue;
+}
