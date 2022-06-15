@@ -9,7 +9,7 @@ export default function FazerPedidoBtn(props) {
                 className="comandaBtn"
                 variant="warning"
                 onClick={props.showFazerPedido}
-            >Fazer pedido</Button>
+            >Iniciar pedido</Button>
         </Container>
     )
 }

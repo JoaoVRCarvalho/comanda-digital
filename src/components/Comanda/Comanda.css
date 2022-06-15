@@ -1,13 +1,20 @@
+.FazerPedido-Wrapper {
+    justify-content: space-evenly;
+}
+
 .btn-container {
     visibility: hidden;
     display: none;
 }
 
 #btnFazerPedido {
-    height:100px;
-    width:100px;
+    /* height:100px; */
+    width:100%;
 }
 
+#addItem-btn {
+    width:100%;
+}
 .comandaBtn {
     /* margin-top: 5vh; */
     color: white;
@@ -30,16 +37,33 @@
 /*  cards css  */
 
 .card-wrapper {
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card-cardapio {
     max-width: 250px;
     max-height: 250px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+#card-text {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
 }
 
 .col {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +71,8 @@
 
 .button-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center center;
 }
 
 .cardFooter-btn {

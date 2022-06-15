@@ -30,7 +30,7 @@ export default function InputPedido() {
                 })}
             </Container>
             <Container className='pedidoInputDiv'>
-                <Button className="comandaBtn" variant='warning' onClick={addItem}>Adicionar item</Button>
+                <Button className="comandaBtn" id='addItem-btn' variant='warning' onClick={addItem}>Adicionar item</Button>
             </Container>    
         </div>
     )
