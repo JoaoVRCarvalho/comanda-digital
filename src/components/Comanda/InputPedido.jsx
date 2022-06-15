@@ -6,15 +6,14 @@ export default function InputPedido() {
     let [item, setItem] = useState(0)
     let counter = item;
     let buffer = [];
-
     const addItem = () => {
         counter++
         setItem(counter);
     }
 
-    if (item > 0) {
-        for (let i; i < item; i++) {
-            buffer.push(<Cardapio/>)
+    if (item >= 0) {
+        for (let i = 0; i < item; i++) {
+            buffer.push(<Cardapio/>);
         }
     }
     
@@ -22,9 +21,11 @@ export default function InputPedido() {
     return (
         <div className="teste">
             <Container className="CardapioContainer">
-                {buffer.map((item) => {
+                {buffer.map((cardapio, index) => {
                     return (
-                        <>{item}</>
+                        <div key={index}>
+                            {cardapio}
+                        </div>
                     )
                 })}
             </Container>
