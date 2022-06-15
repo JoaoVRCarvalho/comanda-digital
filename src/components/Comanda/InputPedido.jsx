@@ -11,6 +11,7 @@ export default function InputPedido() {
         setItem(counter);
     }
 
+    // adicionando ao buffer para iterar poder iterar assim renderizando o cardapio toda vez q o botão for clicado. 
     if (item >= 0) {
         for (let i = 0; i < item; i++) {
             buffer.push(<Cardapio/>);
@@ -19,12 +20,15 @@ export default function InputPedido() {
     
 
     return (
-        <div className="teste">
+        <div className="pedido-wrapper">
             <Container className="CardapioContainer">
                 {buffer.map((cardapio, index) => {
                     return (
                         <div key={index}>
-                            {cardapio}
+                            <div className="item-counter">Item #{index + 1}</div>
+                            <div>
+                                {cardapio}
+                            </div>
                         </div>
                     )
                 })}
