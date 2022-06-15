@@ -18,7 +18,7 @@ const Header = () => {
                         <div name="Sidebar" className="icon-container">
                             <MenuButton showSidebar={showSidebar}/>
                         </div>
-                        <span className="header-logo">Adriano2Lanches</span>
+                        <span className="header-logo">AdrianoLancheS2</span>
                     </div>
                     <div className="headerRight">
                         <div name="Logout" className="icon-container">
