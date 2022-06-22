@@ -4,8 +4,10 @@ import Cardapio from './Cardapio';
 
 export default function InputPedido({ idMesa }) {
     let [item, setItem] = useState(0)
+
     let counter = item;
     let buffer = [];
+
     const addItem = () => {
         counter++
         setItem(counter);
@@ -24,7 +26,9 @@ export default function InputPedido({ idMesa }) {
                 {buffer.map((cardapio, index) => {
                     return (
                         <div key={index}>
-                            <div className="item-counter">Item #{index + 1}</div>
+                            <div>
+                                {/* <p className='item-counter'>Item #{index + 1}</p> */}
+                            </div>
                             <div>
                                 {cardapio}
                             </div>
@@ -33,7 +37,7 @@ export default function InputPedido({ idMesa }) {
                 })}
             </Container>
             <Container className='pedidoInputDiv'>
-                <Button className="comandaBtn" id='addItem-btn' variant='warning' onClick={addItem}>Adicionar item</Button>
+                <Button className="comandaBtn" id='addItem-btn' variant='warning' onClick={addItem}>Iniciar pedido</Button>
             </Container>    
         </div>
     )
