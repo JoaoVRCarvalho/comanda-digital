@@ -18,10 +18,10 @@ export default function CardapioCards() {
 
     return (
         <>
-
+{/* 
         {pedidoArr && 
             <ListaPedido/>
-        }
+        } */}
 
         <Form>
             <Form.Control placeholder="item..." size='sm' type='text' className="filter-input" onChange={e => handleChange(e)}/>
