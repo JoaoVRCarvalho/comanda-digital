@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+#containerDiv {
+    margin-top: 10px;
+}
+
+.filter-input{
+    margin-top: 5vh;
+}
+
 #mesas-col {
     /* max-width: 320px;
     max-height: 250px;
