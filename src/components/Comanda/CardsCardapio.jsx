@@ -10,7 +10,7 @@ export default function CardapioCards() {
     return (
             <Row xs={1} md={2} lg={4} className="g-4 card-wrapper">
                 {listaProdutos.map((obj, idx) => (
-                    <Col key={idx}>
+                    <Col id="card-col" key={idx}>
                         <Card key={obj.id} className="card-cardapio">
                                 <Card.Body>
                                     <Card.Title>{obj.nome}</Card.Title>

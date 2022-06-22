@@ -20,4 +20,10 @@ export const TabsData = [
         cName: "tabCadastro",
         tabInputComponent: <ProdutoInput />,
     },
+    {
+        title: "test de funcionarios",
+        key: "produtos",
+        cName: "tabCadastro",
+        tabInputComponent: <h1>oi</h1>,
+    },
 ]

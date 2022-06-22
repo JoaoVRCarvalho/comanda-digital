@@ -1,5 +1,14 @@
 // fazer mock com todas as infos de 
 
+const createMesas = (nMesas) => {
+    let mesas = []
+    for(let i = 1; i <= nMesas; i++) {
+        mesas.push({id: i})
+    }
+    return mesas;
+}
+
+
 export const listaProdutos = [
     {
         id: 1,
@@ -85,23 +94,4 @@ export const funcionarios = [
     },
 ]
 
-export const mesas = [
-    {
-        id: 1
-    },
-    {
-        id: 2
-    },
-    {
-        id: 3
-    },
-    {
-        id: 4
-    },
-    {
-        id: 5
-    },
-    {
-        id: 6
-    },
-]
+export const listaMesas = createMesas(50);

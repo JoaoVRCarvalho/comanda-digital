@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import Cardapio from './Cardapio';
 
-export default function InputPedido() {
+export default function InputPedido({ idMesa }) {
     let [item, setItem] = useState(0)
     let counter = item;
     let buffer = [];
@@ -18,7 +18,6 @@ export default function InputPedido() {
         }
     }
     
-
     return (
         <div className="pedido-wrapper">
             <Container className="CardapioContainer">
