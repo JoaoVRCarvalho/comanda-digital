@@ -6,12 +6,12 @@ import { CloseRounded } from '@mui/icons-material';
 export default function Pedidos ({ listaPedidos }) {
     
     const handleClick = (objFromPedido) => {
+        let removedItens = [];
         listaPedidos.findIndex((obj, idx) => {
-            console.log(objFromPedido.id);
-            console.log(obj.id);
-            if (obj.id == objFromPedido.id) {
-                listaPedidos.splice(idx, 1)
+            if (obj.id === objFromPedido.id) {
+                removedItens = listaPedidos.splice(idx, 1);
             }
+            return removedItens;
         })
     }
     
