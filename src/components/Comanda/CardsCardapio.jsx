@@ -3,6 +3,8 @@ import { listaProdutos } from '../../dbMock/mockTables.js'
 import { Card, Col, Row, Button, Form } from 'react-bootstrap';
 import ComandaHeader from './_ComandaHeader.jsx';
 
+// FAZER HEADER PEGAR A TELA tODAS, REMOVER COMPONENTES DESNECESSARIOS!!!!!!!!!!
+
 export default function CardapioCards() {
     const [pesquisa, setPesquisa] = useState("");
     const [pedidoArr, setPedidoArr] = useState([]);
