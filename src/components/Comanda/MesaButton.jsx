@@ -8,6 +8,7 @@ export default function MesaButton() {
     const [fazerPedido, setFazerPedido] = useState(true);
     const [clickedMesa, setClickedMesa] = useState(0);
 
+
     const handleClick = (mesaId) => {
         console.log(mesaId);
         setFazerPedido(!fazerPedido);
