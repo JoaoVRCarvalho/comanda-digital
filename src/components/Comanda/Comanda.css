@@ -1,8 +1,8 @@
-.FazerPedido-Wrapper {
+/* .FazerPedido-Wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #containerDiv {
     margin-top: 10px;
@@ -107,4 +107,26 @@
 .cardFooter-btn {
     color: white;
     background-color: darkslateblue;
+}
+
+
+#removeFromListButton {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#remove-button-list {
+    padding: 0;
+}
+
+.list-row {
+    width: 100%
+
+}
+
+.list-row-wrapper {
+    display: flex;
+    justify-content: space-around;
 }
