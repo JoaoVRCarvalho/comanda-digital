@@ -5,14 +5,14 @@ import MenuButton from "./MenuButton";
 import { Sidebar } from "../sidebar/sidebar";
 import './Navbar.css';
 
-const Header = ({ pedidosArr }) => {
+const Header = () => {
     const [sidebar, setSidebar] = useState(false);
     const GetLocation = () => (useLocation().pathname);
 
     const showSidebar = () => setSidebar(!sidebar);
-    if (GetLocation() == "/Login") {
+    if (GetLocation() === "/Login") {
         return <></>
-    } else if (GetLocation() == "/comanda") {
+    } else if (GetLocation() === "/comanda") {
         return <></>
     } else {
         return (

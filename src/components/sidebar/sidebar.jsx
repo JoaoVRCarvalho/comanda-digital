@@ -40,6 +40,7 @@ const SidebarComanda = (props) => (
                     </IconButton>
                 </Link>
             </li>
+            {/*teste v*/}
             <Pedidos listaPedidos={[
                 {
                     "id": 1,
