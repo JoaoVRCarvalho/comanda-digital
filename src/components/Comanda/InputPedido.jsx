@@ -1,25 +1,37 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { Container, Button } from 'react-bootstrap';
-import Cardapio from './Cardapio';
+import Cardapio from './Cardapio.jsx'
+
 
 export default function InputPedido({ idMesa }) {
-    let [item, setItem] = useState(0)
+    const [item, setItem] = useState(0)
+    const [pedidoArr, setPedidoArr] = useState([]);
 
+    const buffer = [];
     let counter = item;
-    let buffer = [];
 
-    const addItem = () => {
-        counter++
-        setItem(counter);
-    }
-
-    // adicionando ao buffer para iterar poder iterar assim renderizando o cardapio toda vez q o botão for clicado. 
-    if (item >= 0) {
-        for (let i = 0; i < item; i++) {
-            buffer.push(<Cardapio/>);
+    const handleAddItem = (e) => {
+        if (e) {
+            counter++
+            setItem(counter);
         }
     }
-    
+
+    if (item >= 1) {
+        for (let i = 0; i < item; i++) {
+            buffer.push(
+                <Cardapio 
+                    idMesa={idMesa}
+                    pedidoArr={pedidoArr} 
+                    setPedidoArr={setPedidoArr}
+                    amoutOfCards={item}
+                    setAmoutOfCards={setItem}
+
+                />
+            );
+        }
+    }
+
     return (
         <div className="pedido-wrapper">
             <Container className="CardapioContainer">
@@ -37,8 +49,23 @@ export default function InputPedido({ idMesa }) {
                 })}
             </Container>
             <Container className='pedidoInputDiv'>
-                <Button className="comandaBtn" id='addItem-btn' variant='warning' onClick={addItem}>Iniciar pedido</Button>
+                <Button
+                    className="comandaBtn" 
+                    id='addItem-btn' 
+                    variant='warning' 
+                    onClick={e => handleAddItem(e)}>
+                        Novo item
+                </Button>
             </Container>    
         </div>
     )
 }
+
+// setBuffer(buffer[...buffer,
+//     <Cardapio 
+//         idMesa={idMesa}
+//         cardArr={buffer} 
+//         pedidoArr={pedidoArr} 
+//         setPedidoArr={setPedidoArr}
+//     />
+// ])
