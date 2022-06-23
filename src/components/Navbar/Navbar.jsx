@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { useLocation } from 'react-router-dom';
 import LogoutButton from "./Logout";
 import MenuButton from "./MenuButton";
-import Sidebar from "../sidebar/sidebar";
+import { Sidebar } from "../sidebar/sidebar";
 import './Navbar.css';
 
-const Header = () => {
+const Header = ({ pedidosArr }) => {
     const [sidebar, setSidebar] = useState(false);
     const GetLocation = () => (useLocation().pathname);
 
     const showSidebar = () => setSidebar(!sidebar);
-    if (GetLocation() !== "/Login") {
+    if (GetLocation() == "/Login") {
+        return <></>
+    } else if (GetLocation() == "/comanda") {
+        return <></>
+    } else {
         return (
             <header className="app-header">
                 <div className="header-wrapper">
@@ -29,8 +33,6 @@ const Header = () => {
                 <Sidebar sidebar={sidebar} showSidebar={showSidebar}/>
             </header>
         )
-    } else {
-        return <></>
     }
 }
 
