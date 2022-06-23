@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { listaProdutos } from '../../dbMock/mockTables.js'
-import ListaPedido from './ListaPedido.jsx';
 import { Card, Col, Row, Button, Form } from 'react-bootstrap';
+import ComandaHeader from './_ComandaHeader.jsx';
 
 export default function CardapioCards() {
     const [pesquisa, setPesquisa] = useState("");
@@ -15,13 +15,9 @@ export default function CardapioCards() {
         setPedidoArr([...pedidoArr, obj]);
     }
     console.log(pedidoArr);
-
     return (
         <>
-{/* 
-        {pedidoArr && 
-            <ListaPedido/>
-        } */}
+        <ComandaHeader pedidosArr={pedidoArr}/>
 
         <Form>
             <Form.Control placeholder="item..." size='sm' type='text' className="filter-input" onChange={e => handleChange(e)}/>
