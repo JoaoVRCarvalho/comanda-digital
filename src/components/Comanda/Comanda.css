@@ -130,3 +130,11 @@
     display: flex;
     justify-content: space-around;
 }
+
+.dropdown-pedidos-button {
+    width: 100%;
+}
+
+.dropdown-menu.show {
+    width: 100%; 
+}
