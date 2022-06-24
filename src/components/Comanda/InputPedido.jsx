@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { Container, Button } from 'react-bootstrap';
 import Cardapio from './Cardapio.jsx'
 import Pedidos from './ListaPedido.jsx';
 
@@ -42,6 +41,7 @@ export default function InputPedido({ idMesa }) {
                 cardapiosToRender={item}
                 setCardapiosToRender={setItem}
             />
+            
             {/* <Container className="CardapioContainer">
                 {buffer.map((cardapio, index) => {
                     return (
