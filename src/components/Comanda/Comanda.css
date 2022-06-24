@@ -138,3 +138,11 @@
 .dropdown-menu.show {
     width: 100%; 
 }
+#button-wrapper-list {
+    display: flex;
+    justify-content: center;
+}
+
+#pedido-list-button {
+    width: 50%;
+}
