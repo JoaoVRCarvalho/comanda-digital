@@ -26,7 +26,6 @@ export default function InputPedido({ idMesa }) {
                     setPedidoArr={setPedidoArr}
                     amoutOfCards={item}
                     setAmoutOfCards={setItem}
-
                 />
             );
         }
