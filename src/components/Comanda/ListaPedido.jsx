@@ -1,9 +1,10 @@
 import { React, useState } from "react";
-import { ListGroup, Button, Dropdown } from "react-bootstrap";
+import { ListGroup, Button, Dropdown, Collapse  } from "react-bootstrap";
 import { CloseRounded } from '@mui/icons-material';
 
 
 export default function Pedidos({ listaPedidos }) {
+    const [collapse, setCollapse] = useState(false);
     const [refresh, setRefresh] = useState(false);
 
     let removedItens;
@@ -18,14 +19,22 @@ export default function Pedidos({ listaPedidos }) {
         setRefresh(!refresh);
     }
 
+    if (!listaPedidos) {
+        return <></>
+    }
 
-    if (listaPedidos) {
-        return (
-            <Dropdown className="dropdown-pedidos" autoClose={false}>
-                <Dropdown.Toggle className="dropdown-pedidos-button comandaBtn" variant='warning'>
-                    View pedidos
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
+    return (
+        <Dropdown className="dropdown-pedidos" autoClose={false}> {/*esse*/ }
+            <Button
+                className="dropdown-pedidos-button comandaBtn" 
+                variant='warning'
+                aria-controls="collapse-wrapper"
+                aria-expanded={collapse}
+                onClick={() => setCollapse(!collapse)}>
+                View pedidos
+            </Button>
+            <Collapse in={collapse}>
+                <div id="collapse-wrapper">
                     <Dropdown.Header>Pedidos</Dropdown.Header>
                     {listaPedidos.map((obj, idx) => (
                         <Dropdown.ItemText key={idx}>
@@ -45,11 +54,17 @@ export default function Pedidos({ listaPedidos }) {
                         </Dropdown.ItemText>
                     ))}
                     <Dropdown.Divider />
-
-                </Dropdown.Menu>
-            </Dropdown>
-        )
-    } else {
-        return <></>
-    }
+                    <div id="button-wrapper-list">
+                        <Button
+                            id="pedido-list-button"
+                            className="comandaBtn"
+                            variant='warning'>
+                            Enviar para cozinha
+                        </Button>
+                    </div>
+                    
+                </div>
+            </Collapse>
+        </Dropdown>
+    )
 }
