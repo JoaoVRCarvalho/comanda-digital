@@ -5,7 +5,7 @@ import { Card, Col, Row, Button, Form } from 'react-bootstrap';
 export default function Cardapio(props) {
     const [pesquisa, setPesquisa] = useState("");
 
-    let toRemoveItem = props.amoutOfCards
+    // let toRemoveItem = props.cardapiosToRender
 
 
     const handleChange = (e) => {
@@ -13,11 +13,10 @@ export default function Cardapio(props) {
     }
 
     const handleAdicionar = (obj) => {
-        toRemoveItem--
-        props.setAmoutOfCards(toRemoveItem)
+        // toRemoveItem--
+        // props.setCardapiosToRender(toRemoveItem)
         props.setPedidoArr([...props.pedidoArr, obj]);
     }
-
 
     // console.log(props.pedidoArr); // quero que esse array va para seu pai <
     return (
