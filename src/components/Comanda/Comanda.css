@@ -146,3 +146,8 @@
 #pedido-list-button {
     width: 50%;
 }
+
+.scrollable-div {
+    max-height: 200px;
+    overflow-y: auto;
+}

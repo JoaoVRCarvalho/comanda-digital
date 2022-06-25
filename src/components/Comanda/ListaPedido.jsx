@@ -36,23 +36,26 @@ export default function Pedidos({ listaPedidos }) {
             <Collapse in={collapse}>
                 <div id="collapse-wrapper">
                     <Dropdown.Header>Pedidos</Dropdown.Header>
-                    {listaPedidos.map((obj, idx) => (
-                        <Dropdown.ItemText key={idx}>
-                            <ListGroup className="list-row-wrapper" horizontal="sm">
-                                <ListGroup.Item className="list-row">{obj.nome}</ListGroup.Item>
-                                <ListGroup.Item className="list-row">{obj.valor_produto}</ListGroup.Item>
-                                <ListGroup.Item className="list-row" id="remove-button-list">
-                                    <Button 
-                                        id="removeFromListButton"
-                                        variant="warning" 
-                                        className="comandaBtn"
-                                        onClick={e => {handleClick(obj)}}>
-                                        <CloseRounded/>
-                                    </Button>
-                                </ListGroup.Item>
-                            </ListGroup>
-                        </Dropdown.ItemText>
-                    ))}
+                    <div className="scrollable-div"> {/* ver pq n foi criada a div */}
+                        {listaPedidos.map((obj, idx) => (
+                            <Dropdown.ItemText key={idx}>
+                                <ListGroup className="list-row-wrapper" horizontal="sm">
+                                    <ListGroup.Item className="list-row">{obj.nome}</ListGroup.Item>
+                                    <ListGroup.Item className="list-row">{obj.valor_produto}</ListGroup.Item>
+                                    <ListGroup.Item className="list-row" id="remove-button-list">
+                                        <Button 
+                                            id="removeFromListButton"
+                                            variant="warning" 
+                                            className="comandaBtn"
+                                            onClick={e => {handleClick(obj)}}>
+                                            <CloseRounded/>
+                                        </Button>
+                                    </ListGroup.Item>
+                                </ListGroup>
+                            </Dropdown.ItemText>
+                        ))}                        
+                    </div>
+
                     <Dropdown.Divider />
                     <div id="button-wrapper-list">
                         <Button
