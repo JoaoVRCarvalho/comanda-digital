@@ -1,5 +1,5 @@
-// fazer mock com todas as infos de 
-
+/*fazer crud  php dos pedidos primeiro e 
+fazer tela da cozinha */
 const createMesas = (nMesas) => {
     let mesas = []
     for(let i = 1; i <= nMesas; i++) {
@@ -509,7 +509,9 @@ export const listaProdutos = [{
     "nome": "Feijao azul - Canned",
     "Ds_Produto": "Other specified multiple gestation with two or more monochorionic fetuses, second trimester",
     "valor_produto": "$110.17"
-  }]
+  }
+]
+
 export const funcionarios = [
     {
         id: 1,
