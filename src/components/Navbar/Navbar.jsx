@@ -10,7 +10,7 @@ const Header = () => {
     const GetLocation = () => (useLocation().pathname);
 
     const showSidebar = () => setSidebar(!sidebar);
-    if (GetLocation() === "/Login") {
+    if (GetLocation() === "/login") {
         return <></>
     } else if (GetLocation() === "/comanda") {
         return <></>
@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="header-wrapper">
                     <div className="headerLeft">
                         <div name="Sidebar" className="icon-container">
-                            <MenuButton showSidebar={showSidebar}/>
+                            <MenuButton showSidebar={showSidebar} />
                         </div>
                         <span className="header-logo">Leandro lanches</span>
                     </div>
@@ -30,7 +30,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <Sidebar sidebar={sidebar} showSidebar={showSidebar}/>
+                <Sidebar sidebar={sidebar} showSidebar={showSidebar} />
             </header>
         )
     }

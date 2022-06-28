@@ -9,12 +9,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default function App() {
     return (
         <Router>
-            <Header/>
+            <Header />
             <Routes>
-                <Route exact path="/" element={<Homepage/>}/>
-                <Route path="/comanda" element={<ComandaDigital/>}/>
-                <Route path="/cadastro" element={<Cadatros/>}/>
-                <Route path="/Login" element={<Login/>}/>
+                <Route path="/home" element={<Homepage />} />
+                <Route path="/comanda" element={<ComandaDigital />} />
+                <Route path="/cadastro" element={<Cadatros />} />
+                <Route path="/Login" element={<Login />} />
             </Routes>
         </Router>
     )
